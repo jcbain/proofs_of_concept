@@ -1,6 +1,6 @@
 const { feedBugsRace } = require("../promises");
 
-describe("feedBugs tests", () => {
+describe("feedBugsRace tests", () => {
   test("should throw an error that the ladybug goes hungry", async () => {
     try {
       await feedBugsRace("aphid");
