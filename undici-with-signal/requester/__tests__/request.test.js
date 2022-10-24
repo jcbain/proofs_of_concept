@@ -6,7 +6,7 @@ const { run } = require("../request");
 setGlobalDispatcher(agent);
 
 describe("run tests", () => {
-  test("run test 1", async () => {
+  test("should throw a timeout error if abort parameter is set to true", async () => {
     try {
       await run(true);
     } catch (err) {
@@ -14,5 +14,10 @@ describe("run tests", () => {
       const expected = "Request aborted";
       expect(actual).toBe(expected);
     }
+  });
+
+  test("should resolve with data if abort parameter isn't set", async () => {
+    const data = await run();
+    expect(data.code).toBe(200);
   });
 });

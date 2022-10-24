@@ -15,6 +15,7 @@ client
   .reply(200, {
     body: mockData,
     status: "success",
+    code: 200,
   });
 
 client
