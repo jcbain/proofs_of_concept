@@ -3,7 +3,7 @@ import App from "./App";
 
 test("renders learn react link", async () => {
   render(<App />);
-  const renderedItem = await screen.getByTestId("title");
+  const renderedItem = screen.getByTestId("title");
   // const renderedItem = await screen.findByTestId(
   //   "grocery-list",
   //   {},
