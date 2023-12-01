@@ -1,3 +1,13 @@
 node_modules
 
 fastify-fast_proxy
+docker-node
+events
+express_errors
+mqueue
+mutex-redis-semaphore
+node_documenting
+streams
+move
+http-server
+mover
